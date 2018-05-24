@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试网页</title>
+	<script type="text/javascript">
+		
+		window.webkit.messageHandlers.test1.postMessage({msg: "test1"});
+		window.webkit.messageHandlers.test2.postMessage({msg: "test2"});
+        
+        location.href="https://www.baidu.com"
+<!--        alert("这是通过网页的alert触发的弹框");-->
+	</script>
+</head>
+<body>
+    <p>测试网页</p>
+</body>
+</html>
