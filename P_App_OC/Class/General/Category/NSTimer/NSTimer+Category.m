@@ -12,8 +12,7 @@
 
 + (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      block:(void (^)(void))block
-                                   repeats:(BOOL)repeats
-{
+                                   repeats:(BOOL)repeats {
     return [self scheduledTimerWithTimeInterval:interval
                                          target:self
                                        selector:@selector(blockInvoke:)
@@ -21,8 +20,7 @@
                                         repeats:repeats];
 }
 
-+ (void)blockInvoke:(NSTimer*)timer
-{
++ (void)blockInvoke:(NSTimer*)timer {
     void(^block)(void) = timer.userInfo;
     if (block)
     {

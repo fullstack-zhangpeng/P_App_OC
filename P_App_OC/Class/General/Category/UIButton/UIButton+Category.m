@@ -12,7 +12,6 @@
 @implementation UIButton (Category)
 
 + (void)load {
-    
     Method originMethod = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
     SEL originSEL = @selector(sendAction:to:forEvent:);
     Method replaceMethod = class_getInstanceMethod(self, @selector(p_sendAction:to:forEvent:));

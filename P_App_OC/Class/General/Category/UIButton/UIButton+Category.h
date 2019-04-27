@@ -15,6 +15,6 @@
 //放大点击范围
 - (void)setEnlargeEdgeWithTop:(CGFloat)top left:(CGFloat)left bottom:(CGFloat)bottom right:(CGFloat)right;
 
-- (void)setEnlargeEdge:(CGFloat) size;
+- (void)setEnlargeEdge:(CGFloat)size;
 
 @end
